@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Sign up | Sign in</title>
    
 <link rel="stylesheet" href="style.css">
@@ -13,7 +14,36 @@
         <div class="grid-2">
             
             <!-- signin starts here -->
+
             <!-- signupstart here -->
+            <form action="#" autocomplete="off">
+                <div class="fullname-group__div">
+                    <label for="fullname" class="full-name__label">Full name</label>
+                    <br>
+                    <input type="text" class="fullname__input-field" placeholder="Enter your full name" id="name">
+                </div>
+                <div class="password-group__div">
+                    <label for="password" class="password__label">Password</label>
+                    <br>
+                    <input type="password" class="pass__input-field" placeholder="Enter your password" id="password">
+                </div>
+                <div class="email-group__div">
+                    <label for="email" class="email__label">E-mail</label>
+                    <br>
+                    <input type="text" class="email__input-field" placeholder="Your e-mail goes here" id="name">
+                </div>
+                <div class="cb__div">
+                    <input type="checkbox" class="cb__input-field"id="checkbox" name="t&c" value="t&c">
+                    <label for="checkbox-text" class="cb__label">I agree all statements in <span><a href="#" class="tos-link">teams of services</a></span></label>
+                </div>
+                <div class="button__div">
+                    <a href="#">
+                        <button type="button" class="signup__button">Sign Up</button>
+                    </a>
+                    <a href="#" class="signin__link">I'm already a member</a>
+                </div>
+
+            </form>
         </div>
     </div>
 

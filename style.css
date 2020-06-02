@@ -1,8 +1,10 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 body {
     margin: 0px;
     height: 100vh;
-    /* background: rgb(167,0,155);
-    background: linear-gradient(152deg, rgba(167,0,155,1) 0%, rgba(233,63,255,1) 46%, rgba(167,0,141,1) 100%); */
     background-color: #FFE53B;
     background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
 
@@ -42,4 +44,117 @@ body {
     background: linear-gradient(152deg, rgba(17,81,96,1) 0%, rgba(15,61,74,1) 46%, rgba(11,55,82,1) 100%);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+.grid-2 form {
+    margin: 70px;
+}
+.full-name__label, .password__label, .email__label {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(206, 206, 206);
+    margin-bottom: 5px;
+}
+.fullname__input-field,.pass__input-field, .email__input-field {
+    background-color: transparent;
+    color: orange;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(119, 119, 119);
+    border: 0px 0px 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+}
+
+/* 
+Change the white to any color ;)
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px black inset !important;
+}
+
+Change text in autofill textbox
+input:-webkit-autofill {
+    -webkit-text-fill-color: yellow !important;
+} */
+
+input:focus {
+    outline: none;
+}
+input:checked {
+    background-color: transparent;
+}
+.fullname-group__div, .password-group__div, .email-group__div, .cb__div {
+    margin-bottom: 25px;
+}
+.cb__div {
+    display: flex;
+}
+.cb__input-field {
+    height: 13px;
+    width: 13px;
+    margin: 2px 5px 0px 0px;
+}
+
+.cb__label {
+    font-size: 13px;
+
+    color: rgb(119, 119, 119);
+}
+
+.checkbox:checked:before{
+    background-color:green;
+    }
+
+.tos-link {
+    color: orange;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.signup__button {
+    height: 30px;
+    width: 100px;
+    border-radius: 25px;
+    border: none;
+    color: rgb(211, 211, 211);
+    font-size: 13px;
+    margin-right: 8px;
+    box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
+    0 3.0px 7.5px rgba(0, 0, 0, 0.205),
+    0 3.4px 10.5px rgba(0, 0, 0, 0.205),
+    0 4.1px 17.5px rgba(0, 0, 0, 0.205)
+}
+
+.signup__button:hover {
+    box-shadow: 0 2.8px 5px rgba(0, 0, 0, 0.212),
+    0 3.0px 7.5px rgba(0, 0, 0, 0.205),
+    0 3.4px 10.5px rgba(0, 0, 0, 0.205),
+    0 4.1px 17.5px rgba(0, 0, 0, 0.205),
+    0 6.1px 21.5px rgba(0, 0, 0, 0.205),
+    0 10px 40.5px rgba(0, 0, 0, 0.205)
+}
+.signup__button {background-image: linear-gradient(161deg, #fe8c00 10%, #ff5628 51%, #fe8c00 100%)}
+.signup__button:hover { background-position: right center; }
+
+.signin__link {
+    font-size: 13px;
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+}
+.button__div a{
+    text-decoration: none;
+}
+button:focus {
+    outline: none;
+}
+.button__div a button {
+    cursor: pointer;
 }
