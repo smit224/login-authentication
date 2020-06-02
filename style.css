@@ -1,0 +1,47 @@
+*{
+    font-family:Helvetica, sans-serif;
+}
+body{
+   background-image: radial-gradient(circle, rgb(23, 24, 29), rgb(143, 1, 36), rgb(153, 4, 17));
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    margin-top: 25px;
+}
+.row{
+    display: inline;
+}
+
+@media only screen and (min-width: 4px) and (max-width: 959px){
+ 
+   
+.col-sm{
+    width: 300px;
+    height: 350px;
+    float: left;
+}
+}
+.left-a{
+    
+   background-color: #6CDEC9;
+   
+}
+
+.title-a{
+    margin-top: 50px !important;
+    text-align: center;
+    color: azure;
+    font-size: 10px;
+    margin: auto;
+}
+.bird-a{
+    width: 200px;
+}
+
+.left-b{
+    
+    background-color: #36485F;
+    
+ }
