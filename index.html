@@ -8,44 +8,67 @@
    
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <div class="main--container">
         <div class="grid-1">hello</div>
         <div class="grid-2">
-            
+            <!-- signup or signin link -->
+            <div class="main-heading">
+                <a href="#sign-in" class="signin">Sign In</a><span class="span-or">or</span><a href="#sign-up" class="signup">Sign Up</a>
+            </div>
+
             <!-- signin starts here -->
-
-            <!-- signupstart here -->
-            <form action="#" autocomplete="off">
-                <div class="fullname-group__div">
-                    <label for="fullname" class="full-name__label">Full name</label>
-                    <br>
-                    <input type="text" class="fullname__input-field" placeholder="Enter your full name" id="name">
+            <div class="signin-signup-main">
+                <div class="signin-main__div">
+                    <form action="#" autocomplete="off" id="signin">
+                        <div class="email-field">
+                            <label for="email" class="email-label">E-MAIL</label><br>
+                            <input type="email" name="email" id="email" placeholder="Enter your e-mail"/>
+                        </div>
+                        <div class="password-field">
+                            <label for="password" class="pass-label">PASSWORD</label><br>
+                            <input type="password" name="password" id="password" placeholder="Enter your password"/>
+                        </div>
+                        <div class="login-reset-pass">
+                            <a href="#"><button class="login-button" id="loginbutton">Log In</button></a>
+                            <a href="#" class="reset-pass">forgot password&#63;</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="password-group__div">
-                    <label for="password" class="password__label">Password</label>
-                    <br>
-                    <input type="password" class="pass__input-field" placeholder="Enter your password" id="password">
+                
+                <!-- signup start here -->
+                <div class="signup-main__div">
+                    <form action="#" autocomplete="off" id="signup">
+                        <div class="fullname-group__div">
+                            <label for="fullname" class="full-name__label">Full name</label>
+                            <br>
+                            <input type="text" class="fullname__input-field" placeholder="Enter your full name" id="name">
+                        </div>
+                        <div class="password-group__div">
+                            <label for="password" class="password__label">Password</label>
+                            <br>
+                            <input type="password" class="pass__input-field" placeholder="Enter your password" id="password">
+                        </div>
+                        <div class="email-group__div">
+                            <label for="email" class="email__label">E-mail</label>
+                            <br>
+                            <input type="email" class="email__input-field" placeholder="Your e-mail goes here" id="name">
+                        </div>
+                        <div class="cb__div">
+                            <input type="checkbox" class="cb__input-field"id="checkbox" name="t&c" value="t&c">
+                            <label for="checkbox-text" class="cb__label">I agree all statements in <span><a href="#" class="tos-link">teams of services</a></span></label>
+                        </div>
+                        <div class="button__div">
+                            <a href="#">
+                                <button type="button" class="signup__button">Sign Up</button>
+                            </a>
+                            <a href="#" class="signin__link">I'm already a member</a>
+                        </div>
+                    </form>
                 </div>
-                <div class="email-group__div">
-                    <label for="email" class="email__label">E-mail</label>
-                    <br>
-                    <input type="text" class="email__input-field" placeholder="Your e-mail goes here" id="name">
-                </div>
-                <div class="cb__div">
-                    <input type="checkbox" class="cb__input-field"id="checkbox" name="t&c" value="t&c">
-                    <label for="checkbox-text" class="cb__label">I agree all statements in <span><a href="#" class="tos-link">teams of services</a></span></label>
-                </div>
-                <div class="button__div">
-                    <a href="#">
-                        <button type="button" class="signup__button">Sign Up</button>
-                    </a>
-                    <a href="#" class="signin__link">I'm already a member</a>
-                </div>
-
-            </form>
+            </div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
